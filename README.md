@@ -15,7 +15,6 @@ Voici la liste des tâches à effectuer.
 Dans la même logique que l'outil `Mon IP`, crée une nouvelle route `/tools/show-datetime` pour l'outil `Date & heure`, qui va chercher la date et l'heure sur l'api `jsontest.com` via le service Angular déjà existant.
 De plus, la date doit être formatée comme suit, avec le timezone de Sydney, Australie : `Il est 14h59 et nous sommes le 8 octobre 2017`.
 
-
 ### Poster un article
 
 En t'inspirant de la structure actuelle du projet, crée une nouvelle route `/post/new` permettant, via un formulaire composé de 2 champs, de poster un nouvel article sur l'API `jsonplaceholder.typicode.com`.
