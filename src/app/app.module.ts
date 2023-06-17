@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ShowIpComponent } from './tools/show-ip/show-ip.component';
+import { ShowDatetimeComponent } from './tools/show-datetime/show-datetime.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ShowIpComponent } from './tools/show-ip/show-ip.component';
 		AppComponent,
 		HomeComponent,
 		ShowIpComponent,
+		ShowDatetimeComponent
 	],
 	imports: [
 		BrowserModule,
