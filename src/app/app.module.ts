@@ -5,14 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyMenuModule as MatMenuModule } from '@angular/material/legacy-menu';
+import {  MatButtonModule } from '@angular/material/button';
+import {  MatMenuModule } from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ShowIpComponent } from './tools/show-ip/show-ip.component';
 import { ShowDatetimeComponent } from './tools/show-datetime/show-datetime.component';
+import { PostArticleComponent } from './tools/post-article/post-article.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ShowDatetimeComponent } from './tools/show-datetime/show-datetime.compo
 		AppComponent,
 		HomeComponent,
 		ShowIpComponent,
-		ShowDatetimeComponent
+		ShowDatetimeComponent,
+		PostArticleComponent
 	],
 	imports: [
 		BrowserModule,
