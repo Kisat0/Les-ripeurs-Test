@@ -1,3 +1,16 @@
-<p>
-  post-article works!
-</p>
+<div class="main">
+  <ng-container *ngIf="loader; else content">
+    <span>Chargement...</span>
+  </ng-container>
+  
+  <ng-template #content>
+    <div class="form-content">
+        <label for="title">Titre* :</label>
+        <input type="text" placeholder="Titre de l'article.." required id="title" minlength="3" maxlength="60" #titleInput>
+        <label for="content">Contenu de l'article* :</label>
+        <textarea placeholder="Contenu de l'article..." required id="content" minlength="30" maxlength="600" #contentInput></textarea>
+        <button (click)="validateAndSubmit(titleInput.value, contentInput.value)">Valider</button>
+        <p *ngIf="postId > 0">Félicitations !! Votre post à bien été envoyé à l'id: {{postId}}</p>
+    </div>
+  </ng-template>
+</div>

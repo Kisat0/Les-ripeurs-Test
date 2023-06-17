@@ -1,0 +1,40 @@
+/* Just the essential.. ✨ */
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border: 2px solid white;
+}
+
+input[type="text"],input[type="textarea"]{
+    min-height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#title{
+    font-weight: bold;
+}
+
+label{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 2px;
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+    background-color: white;
+    transition: all 500ms ease-in-out;
+    margin-top: 50px;
+}
+
+button:hover{
+    color:white;
+    background-color: rgb(22, 22, 22);
+}
