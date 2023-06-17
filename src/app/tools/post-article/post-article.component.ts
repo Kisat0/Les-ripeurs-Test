@@ -26,7 +26,9 @@ export class PostArticleComponent {
 
     const body = { userId: 3, title: title, body:content}
 
-    this.http.post<any>('https://jsonplaceholder.typicode.com/posts', body).subscribe(
+    
+   // this.http.post<any>('https://hook.eu1.make.com/5kvhimgb6vjksempn2b4h52jzlrchdhb',{title: title, body: content, userId: 3}).subscribe(
+     this.http.post<any>('https://jsonplaceholder.typicode.com/posts', body).subscribe(
       data => {
         this.postId = data.id;
         this.loader = false;        
@@ -34,6 +36,6 @@ export class PostArticleComponent {
       error => {
         console.error('An error occurred while submitting the form', error);
       }
-    );
+    ); 
   }
 }
